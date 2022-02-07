@@ -1,0 +1,151 @@
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+html {
+  background-color: var(--very-light-gray);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  line-height: 1.5em;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+}
+
+body {
+  display: block;
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--very-dark-blue);
+}
+
+.MainContainer {
+  margin: 4rem 1.5rem;
+  min-width: 235px;
+}
+
+@media only screen and (min-width: 450px) {
+  .MainContainer {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 820px) {
+  .MainContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 6rem 3.5rem;
+    max-width: 740px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .MainContainer {
+    min-width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+img {
+  width: 20%;
+  height: auto;
+}
+
+@media only screen and (min-width: 820px) {
+  img {
+    width: 30%;
+  }
+}
+
+.Sedans {
+  padding: 3rem;
+  background-color: var(--bright-orange);
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+@media screen and (min-width: 820px) {
+  .Sedans {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+}
+
+.Suvs {
+  padding: 3rem;
+  background-color: var(--dark-cyan);
+}
+
+.Luxury {
+  padding: 3rem;
+  background-color: var(--very-dark-cyan);
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+@media screen and (min-width: 820px) {
+  .Luxury {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+}
+
+.Title {
+  padding: 0.8rem 0;
+  font-family: "Big Shoulders Display", cursive;
+  color: var(--very-light-gray);
+}
+
+.Paragraph {
+  padding-bottom: 0.8rem;
+  color: var(--transparent-white);
+}
+
+.LearnMoreBtn {
+  padding: 1rem 2.3rem;
+  background-color: var(--very-light-gray);
+  border: none;
+  border-radius: 1.5rem;
+}
+
+.Orange {
+  color: var(--bright-orange);
+}
+
+.Cyan {
+  color: var(--dark-cyan);
+}
+
+.DarkCyan {
+  color: var(--very-dark-cyan);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
